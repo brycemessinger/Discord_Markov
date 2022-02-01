@@ -66,7 +66,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    await message.channel.send(make_text(chains))
+    # await message.channel.send(make_text(chains))
+    await message.channel.send("Hello")
 
 
 client.run(os.environ['DISCORD_TOKEN'])
